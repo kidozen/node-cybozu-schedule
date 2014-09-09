@@ -1,0 +1,23 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+     <soap:Header>
+         <Action soap:mustUnderstand="1" 
+        xmlns="http://schemas.xmlsoap.org/ws/2003/03/addressing">{{method}}</Action>
+         <Timestamp soap:mustUnderstand="1" 
+        xmlns="http://schemas.xmlsoap.org/ws/2002/07/utility">
+             <Created>{{created}}</Created>
+             <Expires>{{expires}}</Expires>
+         </Timestamp>
+         <Security xmlns:wsu="http://schemas.xmlsoap.org/ws/2002/07/utility" 
+        soap:mustUnderstand="1" xmlns="http://schemas.xmlsoap.org/ws/2002/12/secext">
+             <UsernameToken>
+                 <Username>{{username}}</Username>
+                 <Password>{{password}}</Password>
+             </UsernameToken>
+         </Security>
+     </soap:Header>
+ <soap:Body>
+ {{body}}
+ </soap:Body>
+</soap:Envelope>

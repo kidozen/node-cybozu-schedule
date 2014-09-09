@@ -1,0 +1,27 @@
+{
+  "name": "cybozu-connect",
+  "version": "0.0.1",
+  "description": "cybozu-connect ==============",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "kido-connector": "0.0.1",
+    "request": "^2.42.0",
+    "winston": "^0.7.3",
+    "xml2js": "^0.4.4"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/tellagostudios/node-cybozu-api.git"
+  },
+  "author": "",
+  "license": "MIT"
+}
