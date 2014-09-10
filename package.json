@@ -8,9 +8,9 @@
   },
   "dependencies": {
     "kido-connector": "0.0.1",
-    "request": "^2.42.0",
-    "winston": "^0.7.3",
-    "xml2js": "^0.4.4"
+    "request": "2.42.0",
+    "winston": "0.7.3",
+    "xml2js": "0.4.4"
   },
   "devDependencies": {
     "mocha": "*"
